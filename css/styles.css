@@ -1,0 +1,132 @@
+body{background: #B20700; max-height: 100%; max-width: 100%;}
+
+.video{
+    height:95%; width:100%;
+    align-content: center;
+}
+
+.image{
+    align-self: middle;
+    width:100%;
+}
+
+.table{
+    width: 100%; height: 100%;
+}
+
+a{
+    color:black;
+}
+a:hover{
+    color:white;
+}
+
+.bck{
+display: none;
+}
+
+.he{
+    background:url(https://upload.wikimedia.org/wikipedia/commons/thumb/9/98/International_Pok%C3%A9mon_logo.svg/2000px-International_Pok%C3%A9mon_logo.svg.png);
+    background-repeat:no-repeat;
+    background-position:center;
+    background-size: contain;
+    border-style:inset;
+    height:29.5%;
+    width:100%;
+}
+
+.le{
+	text-align:center;
+	float:left;
+	background-image: url(https://scontent.fntr6-2.fna.fbcdn.net/v/t1.0-9/52602899_1015269541996196_6369807915854856192_n.jpg?_nc_cat=104&_nc_ht=scontent.fntr6-2.fna&oh=9267be7c539a537692f4278c484a8ecb&oe=5CE69592);
+	background-size: 70% 100%;
+	background-position: center;
+	border-style:outset;
+	margin-right:5px;
+	margin-color: #fff;
+	height: 70%; width: 24%; 
+}
+
+.ce{
+    float:left;
+	background-position:center;
+	height: 70%; width: 49%; 
+}
+
+.ri{
+    text-align: center;
+	float:left;
+	background-image: url(https://scontent.fntr6-2.fna.fbcdn.net/v/t1.0-9/52602899_1015269541996196_6369807915854856192_n.jpg?_nc_cat=104&_nc_ht=scontent.fntr6-2.fna&oh=9267be7c539a537692f4278c484a8ecb&oe=5CE69592);
+	background-size: 70% 100%;
+	background-position: center;
+	border-style:outset;
+	margin-left: 5px;
+	margin-color: #fff;
+	height: 70%; width:25%; 
+
+}
+
+.tag{
+ font: 25px power clear, bold;
+ color: white; 	
+}
+
+.tagl{
+ font: 25px power clear, bold;
+ color: black; 
+ background-color:red; 
+}
+
+.forma{
+    font: 20px power clear, bold;
+    color:white;
+}
+
+.kanto{
+    font: 15px power clear, bold;
+    color: black;
+    background-color:#ff0000;
+}
+
+.johto{
+    font: 15px power clear, bold;
+    color: black;
+    background-color:#ff6a00;
+}
+
+.hoenn{
+    font: 15px power clear, bold;
+    color: black;
+    background-color:#ffd800;
+}
+
+.sinnoh{
+    font: 15px power clear, bold;
+    color: black;
+    background-color:#b6ff00;
+}
+
+.unova{
+    font: 15px power clear, bold;
+    color: black;
+    background-color:#0094ff;
+}
+
+.kalos{
+    font: 15px power clear, bold;
+    color: black;
+    background-color:#0026ff;
+}
+
+.alola{
+    font: 15px power clear, bold;
+    color: black;
+    background-color:#b200ff;
+}
+
+.galar{
+    
+    font: 15px power clear, bold;
+    color: black;
+    background-color:#f76cbd;
+}
