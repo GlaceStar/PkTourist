@@ -10,6 +10,12 @@ body{background: #B20700; max-height: 100%; max-width: 100%;}
     width:100%;
 }
 
+.imag{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .table{
     width: 100%; height: 100%;
 }
@@ -50,7 +56,7 @@ display: none;
 .ce{
     float:left;
 	background-position:center;
-	height: 70%; width: 48%; 
+	height: 70%; width: 49%; 
 }
 
 .ri{
@@ -67,66 +73,134 @@ display: none;
 }
 
 .tag{
- font: 25px power clear, bold;
- color: white; 	
+font-family: power clear; 
+src: url(pkmndp.ttf) format('woff');
+font-weight: normal;
+font:20px;
+color: white; 	
 }
 
 .tagl{
- font: 25px power clear, bold;
+ font-family: power clear; font-size: 20px;
+ src: url(pkmndp.ttf) format('woff');
+ font-weight: normal;
  color: black; 
  background-color:red; 
 }
 
+.shop{
+ font-family: power clear; font-size: 20px;
+ src: url(pkmndp.ttf) format('woff');
+ font-weight: normal;       
+ color: black; 
+ align-self: center;
+ background-color:red; 
+}
+
+.shopt{
+ font-family: power clear; font-size: 20px;
+ src: url(pkmndp.ttf) format('woff');
+ font-weight: normal;       
+ color: black; 
+ align-self: center;
+ background-color:red;
+ border:1px; 
+}
+
 .forma{
-    font: 20px power clear, bold;
+    font-family: power clear;
+    src: url(pkmndp.ttf) format('woff');
+    font-weight: normal;
     color:white;
 }
 
 .kanto{
-    font: 15px power clear, bold;
+    font-family: power clear;
+    src: url(pkmndp.ttf) format('woff');
+    font-weight: normal;
     color: black;
     background-color:#ff0000;
 }
 
 .johto{
-    font: 15px power clear, bold;
+    font-family: power clear;
+    src: url(pkmndp.ttf) format('woff');
+    font-weight: normal;
     color: black;
     background-color:#ff6a00;
 }
 
 .hoenn{
-    font: 15px power clear, bold;
+    font-family: power clear;
+    src: url(pkmndp.ttf) format('woff');
+    font-weight: normal;
     color: black;
     background-color:#ffd800;
 }
 
 .sinnoh{
-    font: 15px power clear, bold;
+    font-family: power clear;
+    src: url(pkmndp.ttf) format('woff');
+    font-weight: normal;
     color: black;
     background-color:#b6ff00;
 }
 
 .unova{
-    font: 15px power clear, bold;
+    font-family: power clear;
+    src: url(pkmndp.ttf) format('woff');
+    font-weight: normal;
     color: black;
     background-color:#0094ff;
 }
 
 .kalos{
-    font: 15px power clear, bold;
+    font-family: power clear;
+    src: url(pkmndp.ttf) format('woff');
+    font-weight: normal;
     color: black;
     background-color:#0026ff;
 }
 
 .alola{
-    font: 15px power clear, bold;
+    font-family: power clear;
+    src: url(pkmndp.ttf) format('woff');
+    font-weight: normal;
     color: black;
     background-color:#b200ff;
 }
 
-.galar{
-    
-    font: 15px power clear, bold;
+.galar{  
+    font-family: power clear;
+    src: url(pkmndp.ttf) format('woff');
+    font-weight: normal;
     color: black;
     background-color:#f76cbd;
 }
+
+#inputcarro {
+        border:1px inset rgb(153,204,255);
+        width: 40px;
+        background:rgb(102,153,204);
+        text-align : center;
+    color=white;
+    }
+    #inputs {
+        border:1px inset rgb(153,204,255);
+        width: 280px;
+        background:rgb(102,153,204);
+        text-align : center;
+        }
+    #boton  {
+        background: rgb(102,153,204) border:1px outset rgb(153,204,255);
+        width:80px;
+        font : 8pt Verdana, Geneva, Arial, Helvetica, sans-serif;
+        background-color : #FFFACD;
+        color : #4B0082;
+    }
+    div.marco {border:2px groove rgb(153,204,255);width: 750px; padding:15px}
+    div.marco2 {border:2px groove rgb(153,204,255);width: 700px;padding:15px}
+    p.texto {letter-spacing: 3px;color:rgb(0,51,102);font-weight: bold}
+    span.label {width:150px;vertical-align:top;color:white;
+        float:left}
+    div {margin-top:15px}
