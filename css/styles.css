@@ -178,29 +178,98 @@ color: white;
     background-color:#f76cbd;
 }
 
+.log span{
+    font-family: power clear;
+    src: url(pkmndp.ttf) format('woff');
+    font-weight: normal;
+    color: black;
+    background-color:#04C668;
+}
+
+
+
+
+
+
+
+
 #inputcarro {
-        border:1px inset rgb(153,204,255);
-        width: 40px;
-        background:rgb(102,153,204);
-        text-align : center;
+    font-family: power clear;
+    src: url(pkmndp.ttf) format('woff');
+    font-weight: normal;
+    border:1px inset rgb(255,255,255);
+    width: 40px;
+    background:rgb(255,255,255);
+    text-align : center;
     color=white;
     }
-    #inputs {
-        border:1px inset rgb(153,204,255);
-        width: 280px;
-        background:rgb(102,153,204);
-        text-align : center;
+
+#inputs {
+    font-family: power clear;
+    src: url(pkmndp.ttf) format('woff');
+    font-weight: normal;
+    border:1px inset rgb(255,255,255);
+    width: 280px;
+    text-align : center;
         }
-    #boton  {
-        background: rgb(102,153,204) border:1px outset rgb(153,204,255);
-        width:80px;
-        font : 8pt Verdana, Geneva, Arial, Helvetica, sans-serif;
-        background-color : #FFFACD;
-        color : #4B0082;
+
+
+
+
+
+#boton  {
+    font-family: power clear;
+    src: url(pkmndp.ttf) format('woff');
+    font-weight: normal;
+    background: rgb(255,255,255) border:1px outset rgb(255,255,255);
+    width:80px;
+ 
     }
-    div.marco {border:2px groove rgb(153,204,255);width: 750px; padding:15px}
-    div.marco2 {border:2px groove rgb(153,204,255);width: 700px;padding:15px}
-    p.texto {letter-spacing: 3px;color:rgb(0,51,102);font-weight: bold}
-    span.label {width:150px;vertical-align:top;color:white;
-        float:left}
-    div {margin-top:15px}
+
+    div.marco {
+    font-family: power clear;
+    src: url(pkmndp.ttf) format('woff');
+    font-weight: normal;
+    border:2px groove rgb(255,255,255);
+    width: 750px; 
+    padding:15px}
+    
+    div.marco2 {
+    font-family: power clear;
+    src: url(pkmndp.ttf) format('woff');
+    font-weight: normal;
+    border:2px groove rgb(255,255,255);
+    width: 700px;
+    padding:15px
+    }
+    
+    p.texto {
+    font-family: power clear;
+    src: url(pkmndp.ttf) format('woff');
+    font-weight: normal;
+    font-size:30px;
+    color:white;
+    }
+    
+
+    span.label {
+    font-family: power clear;
+    src: url(pkmndp.ttf) format('woff');
+    font-weight: normal;
+    font-size:15px;
+    width:150px;
+    vertical-align:top;
+    color:white;
+    float:left
+    }
+
+    div {
+    font-family: power clear;
+    src: url(pkmndp.ttf) format('woff');
+    font-weight: normal;
+    margin-top:15px
+    }
+
+
+
+

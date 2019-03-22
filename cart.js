@@ -28,18 +28,18 @@ function setcookie (name,value,expires,path,domain,secure) {
      ((secure) ? "; secure" : "");
 }
 
-function formatoeuros(input) {
-    var euros = Math.floor(input)
+function formatopesos(input) {
+    var pesos = Math.floor(input)
     var tmp = new String(input)
     for (var decimalAt = 0; decimalAt < tmp.length; decimalAt++) {
        if (tmp.charAt(decimalAt)==".")
        break;
        }
-  var centimos  = "" + Math.round(input * 100)
-  centimos = centimos.substring(centimos.length-2, centimos.length)
-  euros += ((tmp.charAt(decimalAt+2)=="9")&&(centimos=="00"))? 1 : 0;
+  var centavos  = "" + Math.round(input * 100)
+  centavos = centavos.substring(centavos.length-2, centavos.length)
+  pesos += ((tmp.charAt(decimalAt+2)=="9")&&(centavos=="00"))? 1 : 0;
 
-  return euros + "." + centimos
+  return pesos + "." + centavos
 }
 
 function quitardelcarrito(RemOrder) {
@@ -77,21 +77,21 @@ function visualizarcarrito() {
     campos[2] = datos.substring( ficha1+1, ficha2 );
     campos[3] = datos.substring( ficha2+1, datos.length );
     subtotal = subtotal + (campos[1] * campos[0]);
-    preciototal = formatoeuros(subtotal);
-    tablas += "<tr style='font: 9pt; text-align: justify; color=white'><td>" + campos[2] + "</td><td  style='color=navy'>"
+    preciototal = formatopesos(subtotal);
+    tablas += "<tr style='font: 9pt; text-align: justify; color=white'><td>" + campos[2] + "</td><td  style='color=white'>"
         + campos[3] + "</td><td>" + campos[1]
-        + " €</td><td><input type=text id='inputcarro' size=2 name=\"Cantidad"+ i +"\" value=\""
+        + "</td><td><input type=text id='inputcarro' size=2 name=\"Cantidad"+ i +"\" value=\""
         + campos[0] + "\"></td>"
         + "<td><input type=button id=boton value=\"  Eliminar  \" onClick=\"quitardelcarrito("+i+")\">"
-      	+ "&nbsp;<input type=button id=boton value=\"  Catálogo  \" onClick=\"parent.history.back()\"></td>"
+      	+ "&nbsp;<input type=button id=boton value=\"  Catalogo  \" onClick=\"parent.history.back()\"></td>"
         + "<input type=hidden name=\"Referencia"+ i +"\" value=\"" + campos[2] + "\">"
         + "<input type=hidden name=\"Producto"+ i +"\" value=\"" + campos[3] + "\">"
-        + "<input type=hidden name=\"Euros"+ i +"\" value=\"" + campos[1] + "\">";
+        + "<input type=hidden name=\"Pesos"+ i +"\" value=\"" + campos[1] + "\">";
         }
    document.write(tablas);
-   document.write("</td></tr><tr><td colspan=2 style='font: 9pt'>TOTAL CARRITO IVA INCLUIDO</td><td style='color: navy'>");
+   document.write("</td></tr><tr><td colspan=2 style='font: 9pt'>Subtotal</td><td style='color: white'>");
    document.write(preciototal);
-   document.write(" €</td><td colspan=2 style='font: 6pt; text-align: center; color=white'>Páginas web con XHTML, Javascript y CSS. </td>");
+   document.write(" </td><td colspan=2 style='font: 6pt; text-align: center; color=white'>   </td>");
 }
 
 function deletecookie(name, path, domain) {
