@@ -2,20 +2,20 @@
 function meterencarro(formu) {
 unidades=formu.numpedido.value;
 descripcion=formu.producto.value;
-if (confirm("El siguiente producto se va a añadir al carro de la compra.\n\n " + descripcion + " \n\n¿Está Vd. de acuerdo?")) {
+if (confirm("El siguiente producto se va a agregar al carro de la compra.\n\n " + descripcion + " \n\n¿Esta de acuerdo?")) {
 numeroregistro = 0;  
 numeroregistro = getcookie("numerodeorden");
 numeroregistro++;
 if ( numeroregistro > 5 )
-     alert("ATENCIÓN\nSu carrito esta lleno.\nPor favor, acceda a la hoja de pedido.\nGracias.");
+     alert("Atencion\nSu carrito esta lleno.\nPor favor, acceda a la hoja de pedido.\nGracias.");
 else {
 actualizarbase = formu.numpedido.value + "|"  + formu.precio.value  + "|" + formu.referencia.value + "|" + formu.producto.value;
 nuevopedido = "Order." + numeroregistro;
 setcookie (nuevopedido, actualizarbase, null, "/");
 setcookie ("numerodeorden", numeroregistro, null, "/");
 
-aviso = "PRODUCTO SELECCIONADO\n\n" + "Cantidad: " + unidades + " unidad/es.\n"
-+ "Producto: \n" + descripcion + ".\n\nPulse sobre Ver Carro para acceder\na su lista de compra.\nGracias";
+aviso = "Seleccionaste un producto\n\n" + "Cantidad: " + unidades + " unidad/es.\n"
++ "Producto: \n" + descripcion + ".\n\nPulse sobre el carrito para acceder\na su lista de compras.\nGracias! :3";
 alert(aviso);
 }
 }
