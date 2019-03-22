@@ -43,7 +43,7 @@ function formatopesos(input) {
 }
 
 function quitardelcarrito(RemOrder) {
-   if (confirm("El producto seleccionado va a ser eliminado de su carro de la compra.\n¿Esta Vd. de acuerdo?")) {
+   if (confirm("El producto sera eliminado de su carro de compra.\n¿Estas de acuerdo?")) {
    numerodeorden = getcookie("numerodeorden");
    for(i=RemOrder; i < numerodeorden; i++) {
        nuevopedido1 = "Order." + (i+1);
